@@ -5,10 +5,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GestionEventos.API.Controllers
 {
-    public class EventosController
-    {
-        [ApiController]
-        [Route("/api/Eventos")]
+    [ApiController]
+    [Route("/api/Eventos")]
+    
+        
         public class EventosAcademicosController : ControllerBase
         {
             private readonly DataContext _context;
@@ -102,5 +102,5 @@ namespace GestionEventos.API.Controllers
 
 
 
-}
+
 

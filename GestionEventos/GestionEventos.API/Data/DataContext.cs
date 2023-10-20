@@ -18,15 +18,15 @@ namespace GestionEventos.API.Data
         }
 
         public DbSet<EventoAcademico> Eventos { get; set; }
+        public DbSet<Participantes> Participante { get; set; }
 
+        public DbSet<ProgramaEvento> Programa { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
         }
 
-        public DbSet<Participantes> Participante { get; set; }
-
-        public DbSet<ProgramaEvento> Programa { get; set; }
+        
 
       
     }
